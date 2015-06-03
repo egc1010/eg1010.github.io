@@ -1,0 +1,209 @@
+body
+{
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+header h1
+{
+	margin: 0px 0px 0px 15px;
+}
+
+header nav
+{
+	display: block;
+	text-align: center;
+}
+header button
+{
+	background: #5FA000;
+	border-radius: 5px; /*border redondeados en caja*/
+	color: black; /*color de letra*/
+	margin: 0px 10px 0px 0px; /*espacio externo*/
+	padding: 5px 15px; /*espacio interno*/
+}
+header button:hover
+{
+	background: #2F5702;
+	color: white; /*color de letra*/
+}
+header nav ul li 
+{
+	/*background: #2F5702*/
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	/*width: 89px;*/
+}
+section article
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+}
+footer
+{
+	background:blue;
+	color: white;
+	border-radius: 5px;
+	padding: 5px 15px; /*espacio interno*/
+	text-align: center;
+	width: 100%;
+}
+footer article
+{
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 45%;
+}
+
+
+/*Empiezan las clases personalizadas*/
+#img
+{
+	/*width: 400px;*/
+	width: 100%;
+}
+#img1
+{
+	/*width: 540px;*/
+	width: 100%;
+	margin: 0 auto;
+}
+#artInicio
+{
+	display: block;
+	margin: 0 auto;
+
+}
+#artInicioTxt
+{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}/*
+#Curriculum
+{
+	display: none;
+	margin: 0 auto;
+}
+#curriculumTxt
+{
+	display: none;
+	margin: 0 auto;
+}
+#artPrimer
+{
+	display: none;
+	margin: 0 auto;
+}
+
+#artPrimerTxt
+{
+	display: none;
+	margin: 0 auto;
+}
+#pag1
+{
+	display: none;
+	margin: 0 auto;
+}
+
+#pag1Txt
+{
+	display: none;
+	margin: 0 auto;
+}
+#artBootstrap
+{
+	display: none;
+	margin: 0 auto;
+}
+
+#artBootstrapTxt
+{
+	display: none;
+	margin: 0 auto;
+}
+#artJava
+{
+	display: none;
+	margin: 0 auto;
+}
+
+#artJavaTxt
+{
+	display: none;
+	margin: 0 auto;
+}
+#artPhp
+{
+	display: none;
+	margin: 0 auto;
+}
+
+#artPhpTxt
+{
+	display: none;
+	margin: 0 auto;
+}*/
+
+#MenuResp
+{
+	display: none;
+}
+
+.Negr
+{
+	font-weight: bold;
+}
+.Titu
+{
+	color: blue;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px){
+	body
+	{
+		width: 100%;
+	}
+	header
+	{
+		font-size: 0.5em;
+		width: 100%;
+	}
+	header img
+	{
+		display: none;
+	}
+
+	header nav
+	{
+		display: none;
+	}
+
+	section article
+	{
+		display: block;
+		width: 100%;
+	}
+	#MenuResp
+	{
+		display: block;
+		width: 100%;
+	}
+	#img
+	{
+	width: 100%;
+	}
+	#img1
+	{
+	width: 100%;
+	margin: 0 auto;
+	}
+}
+
+

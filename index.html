@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<title>Proyecto Final</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!--<script src="js/eventos.js"></script>-->
+	<script type="text/javascript">
+			function curriculum1()
+				{
+					debugger
+					$("#curr").show();
+					$("section > article").hide();
+					$("#html51").hide();
+					$("#java1").hide();
+				}
+				function html51()
+				{
+					debugger
+					$("#html51").show();
+					$("#curr").hide();
+					$("section > article").hide();
+					$("#java1").hide();
+				}
+				function java1()
+				{
+						debugger
+					$("#html51").hide();
+					$("#curr").hide();
+					$("section > article").hide();
+					$("#java1").show();
+					
+				}
+	</script>
+</head>
+<body >
+	<header>
+		<div class="page-header">
+		  <h1 style="text-align:center">Trabajo de programacion web <br>
+		  </h1>
+		</div>	
+		<nav class="navbar navbar-inverse">
+	      <div class="container-fluid">
+	        <!-- Brand and toggle get grouped for better mobile display -->
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#">ITC</a>
+	        </div>
+
+	        <!-- Collect the nav links, forms, and other content for toggling -->
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+	          <ul class="nav navbar-nav">
+	            <li class="active">
+	            	<a onclick="curriculum1()">curriculum</a>
+	            </li>
+	            <li>
+	            	<a onclick="html51()">JavaScript</a>
+	            </li>
+	            <li>
+	            	<a onclick="java1()" >Html5</a>
+	            </li>
+	          </ul>
+	        </div><!-- /.navbar-collapse -->
+	      </div><!-- /.container-fluid -->
+	    </nav>
+		<!--<nav>
+			<ul>
+				<li>
+					<button  class="btn btn-primary" >
+						 curriculum
+					</button>
+				</li>
+				<li>
+					<button id="btnHtml" class="btn btn-primary">
+						  HTML5
+					</button>
+				</li>
+				
+				<li>
+					<button id="btnJava" class="btn btn-primary">
+						  JavaScrip
+					</button>
+				</li>
+				
+				
+				
+			</ul>			
+		</nav>-->
+		<select name="MenuResp" id="MenuResp" onchange="inicioApp()" class="form-control">
+				<option value="btnInicio">Inicio</option>
+				<option value="btncurriculum">Curriculum</option>
+				<option value="btnPrimer">Primer Html</option>
+				<option value="btnHtml">HTML5</option>
+				<option value="btnBootstrap">Bootstrap</option>
+				<option value="btnJava">JavaScript</option>
+				<option value="btnPhp">Php</option>
+		</select>
+	</header>
+	
+		<section>
+		<br>
+		<!--<article id="artInicio">
+		<img src="img/pw.jpg" alt="" id="img1">
+		</article>-->
+		<article id="artInicioTxt">
+		
+		</article>
+
+		<div class="row collapse in" id="curr" aria-expanded="true" style="display:none">
+			<div class="col-md-4">
+		<img src="img/EGC.png" alt="" id="img" style="width:300px"> <br><br>
+		</div>
+
+		<div class="col-md-8">
+			
+		<span class="Titu">Datos Personales</span><br>
+		<span class="Negr">Nombre: </span> Emmanuel Guerrero Cebreros <br>
+		<span class="Negr">Carrera: </span> Ingeniria en TIC´s<br>
+		<span class="Negr">Escuela: </span> Instituto Tecnológico de Culiacán<br>
+		<span class="Negr">Materia: </span> Programación Web<br>
+		<br>
+		<span class="Negr">Estudios</span><br>
+		<span class="Negr">Primaria: </span>CEDI 1999-2004<br>
+		<span class="Negr">Secundaria: </span> COLEGIO SINALOA 2005-2008<br>
+		<span class="Negr">Preparatoria: </span> COLEGIO SINALOA 2008-2011<br>
+		<span class="Negr">Universidad: </span> INSTITUTO TECNOLOGICO DE CULIACAN <br>
+
+		
+		
+		
+		</div>
+
+		</div>
+		
+		
+			
+		
+		
+		<!--<article id="artPrimer">
+		<img src="img/Primer.png" alt="" id="img">
+		<br> <br>
+		</article>-->
+		
+		<div class="row" style="display:none" id="java1">
+		<article id="artPrimerTxt">
+		<span class="Titu">Primer página creada</span><br>
+		Primer pagina realizada en la clase de programacion web <br><br>
+		</article>
+
+		<article id="pag1">
+		<img src="img/pag1.png" alt="" id="img">
+		<br> <br>
+		</article>
+
+		
+
+		
+		<article id="artCss">
+		<img src="img/completo.jpg" alt="" id="img">
+		<br> <br>
+		</article>
+		<article id="artCssTxt">
+		<span class="Titu">Práctica 1</span><br>
+		Esta practica fue realizada con html5 y boostrap.<br><br>
+		</article>
+		<article id="artCss2">
+		<img src="img/practica2.png" alt="" id="img">
+		<br> <br>
+		</article>
+		<article id="artCss2Txt">
+		<span class="Titu">Práctica 2</span><br>
+		Utilizamos varias etiquetas para la inserccion y acomodo de las imagenes como tambien el tamaño de letra y fuentes<br><br>
+		</article>
+		<article id="artCss3">
+		<img src="img/completo3.jpg" alt="" id="img">
+		<br> <br>
+		</article>
+		<article id="artCss3Txt">
+		<span class="Titu">Práctica 3</span><br>
+		Utilizamos varias etiquetas para la inserccion y acomodo de las imagenes como tambien el tamaño de letra y fuentes<br><br>
+		</article>
+		</div>
+
+		<div class="row" style="display:none" id="html51">
+		<article id="artBootstrap">
+		<img src="img/Bootstrap.png" alt="" id="img">	 <br><br>
+		</article>
+		<article id="artBootstrapTxt">
+		<span class="Titu"> Bootstrap</span><br>
+		Utilizamos bootstrap para dar estilos a los botones <br><br>	
+		</article>
+		<article id="artJava">
+		<img src="img/Java.png" alt="" id="img"> <br><br>
+		</article>
+		<article id="artJavaTxt">
+		<span class="Titu">JavaScript</span><br>
+		Utilizamos el lenguaje javascrip para la creacion de una calculadora<br><br> 
+		</article>
+		<article id="artPhp">
+		<img src="img/Php.png" alt="" id="img"> <br><br>
+		</article>
+		<article id="artPhpTxt">
+		<span class="Titu"> Php</span><br>
+		Utilizamos para un programa de altas bajas   <br><br>
+		</article>
+		</div>
+	</section>
+	<footer>
+	<article> 
+	 Programacion web
+	</article>
+	
+		
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
